@@ -17,7 +17,6 @@ class CustomDataset(Dataset):
         image, label = self.dataset[idx]
         return image, label
 
-
 class CustomDataLoader(DataLoader):
     def __init__(self, dataset, batch_size=4, shuffle=True):
         self.dataloader = DataLoader(dataset, batch_size=batch_size, shuffle= shuffle)
